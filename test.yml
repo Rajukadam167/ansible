@@ -1,0 +1,10 @@
+---
+-
+ hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+    Tasks:
+        name: stoppingservices
+           win_service:
+             name: Bits
+             state: stopped
+...
